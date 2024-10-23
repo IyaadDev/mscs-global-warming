@@ -127,7 +127,7 @@
 
     <div id="slide4" class="slide">
         <h1>Mitigation Strategies</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Global_greenhouse_gas_emissions_by_sector%2C_2016.svg/640px-Global_greenhouse_gas_emissions_by_sector%2C_2016.svg.png" alt="Greenhouse Gas Emissions by Sector">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/20210626_Variwide_chart_of_greenhouse_gas_emissions_per_capita_by_country.svg/1920px-20210626_Variwide_chart_of_greenhouse_gas_emissions_per_capita_by_country.svg.png"class="image" alt="Greenhouse Gas Emissions by Sector">
         <p>Mitigating climate change requires a multi-faceted approach aimed at reducing greenhouse gas emissions and enhancing carbon sinks. One of the most crucial strategies is transitioning from fossil fuels to renewable energy sources. This includes expanding solar, wind, hydroelectric, and geothermal power generation. Many countries are setting ambitious targets for renewable energy adoption and phasing out coal-fired power plants. Alongside this, improving energy efficiency in buildings, industries, and transportation can significantly reduce overall energy demand and associated emissions.</p>
         <p>The transportation sector is a major contributor to greenhouse gas emissions, and its decarbonization is critical. This involves promoting electric vehicles, improving public transportation systems, and developing sustainable aviation fuels. Urban planning that reduces the need for private vehicle use, such as creating walkable cities and improving cycling infrastructure, also plays a crucial role. In the longer term, technologies like hydrogen fuel cells may provide additional options for zero-emission transportation.</p>
         <p>Agriculture and land use changes are another significant source of emissions. Mitigation strategies in this sector include improving agricultural practices to reduce methane emissions from livestock and rice cultivation, minimizing the use of nitrogen-based fertilizers, and adopting no-till farming practices that help sequester carbon in the soil. Protecting and restoring forests, wetlands, and other natural ecosystems is also crucial, as these act as important carbon sinks. Efforts to reduce deforestation and promote reforestation are key components of many national and international climate strategies.</p>
@@ -137,13 +137,44 @@
 
     <div id="slide5" class="slide">
         <h1>The Path Forward</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Projected_changes_in_global_mean_surface_temperature_%28GMST%29_under_five_illustrative_emissions_scenarios.png/640px-Projected_changes_in_global_mean_surface_temperature_%28GMST%29_under_five_illustrative_emissions_scenarios.png" alt="Projected Temperature Changes">
+        <img class="image" src="https://nca2014.globalchange.gov/sites/report/files/images/web-large/CS_average-annual-temp_global_V6-hi_0.jpg" alt="Projected Temperature Changes">
         <p>The path forward in addressing climate change requires unprecedented global cooperation and a fundamental transformation of our energy systems, economies, and societies. The Paris Agreement, adopted in 2015, set a global goal to limit temperature increase to well below 2°C above pre-industrial levels, and preferably to 1.5°C. Achieving this goal requires rapid and far-reaching transitions in energy, land, urban infrastructure, and industrial systems. It necessitates a dramatic reduction in greenhouse gas emissions, reaching net-zero emissions by mid-century.</p>
         <p>Technological innovation will play a crucial role in this transition. Continued advancements in renewable energy technologies, energy storage, and smart grid systems are essential for decarbonizing the energy sector. Emerging technologies like green hydrogen production, advanced nuclear reactors, and direct air capture of CO2 may provide additional tools for emissions reduction. In the transportation sector, the rapid development and adoption of electric vehicles, along with sustainable aviation and shipping technologies, are key. Innovations in agriculture, such as precision farming and lab-grown meat, could help reduce emissions from food production.</p>
         <p>Policy measures will be critical in driving this transition. Carbon pricing, whether through carbon taxes or cap-and-trade systems, can create economic incentives for emissions reduction across all sectors. Regulatory measures, such as emissions standards and energy efficiency requirements, can drive technological adoption and behavioral changes. Government investment in research and development, as well as in climate-resilient infrastructure, will be crucial. International climate finance mechanisms are needed to support developing countries in their transition to low-carbon economies and in adapting to climate impacts.</p>
         <p>Addressing climate change also requires significant changes in individual behaviors and consumption patterns. This includes shifts towards plant-based diets, reducing food waste, choosing low-carbon transportation options, and adopting energy-efficient practices in homes and workplaces. Education and awareness campaigns play a crucial role in driving these behavioral changes. The concept of a "just transition" is important, ensuring that the shift to a low-carbon economy doesn't disproportionately affect vulnerable communities and that new economic opportunities are created as old industries are phased out.</p>
         <p>While the challenge of climate change is daunting, it also presents opportunities for innovation, job creation, and the development of more sustainable and resilient societies. The transition to a low-carbon economy can bring co-benefits such as improved air quality, enhanced energy security, and the creation of new industries and jobs in clean energy and related sectors. As we move forward, it's crucial to approach climate action not just as a necessary response to a global threat, but as an opportunity to create a more sustainable, equitable, and prosperous world for current and future generations. The path forward requires urgent action, sustained commitment, and collaboration at all levels - from individual actions to international cooperation.</p>
     </div>
+
+    <div id="slide6" class="slide">
+        <h1>Thank You!</h1>
+        <img class="image" src="https://www.example.com/thank-you-image.png" alt="Thank You">
+        <p>Thank you for taking the time to learn about climate change and its impacts. Together, we can make a difference and create a sustainable future for generations to come.</p>
+        <p>Let's take action now and be part of the solution!</p>
+    </div>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        #slide6 h1 {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #slide6 img {
+            animation: slideIn 2s ease-in-out;
+        }
+
+        #slide6 p {
+            animation: fadeIn 3s ease-in-out;
+        }
+    </style>
 
     <div class="nav-buttons">
         <button onclick="prevSlide()">Previous</button>
@@ -152,7 +183,7 @@
 
     <script>
         let currentSlide = 1;
-        const totalSlides = 5;
+        const totalSlides = 6;
 
         function showSlide(n) {
             document.querySelector('.slide.active').classList.remove('active');
