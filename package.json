@@ -1,0 +1,11 @@
+{
+  "name": "mscs-global-warming",
+  "version": "1.0.0",
+  "description": "Talks about global climate problems",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
